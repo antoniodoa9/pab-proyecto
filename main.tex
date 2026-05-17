@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+
+% Idioma y codificación
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Formato
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{parskip}
+
+\begin{document}
+\vspace*{1cm} 
+% Encabezado
+\begin{center}
+    {\LARGE \textbf{Propuesta inicial para el trabajo en grupo}} \\[0.5cm]
+    {\large Grado en Ingeniería de la Salud} \\
+    {\large  Universidad de Málaga}
+\end{center}
+
+\vspace{1cm}
+
+% 1. Integrantes del grupo
+\section*{Integrantes del grupo}
+\begin{itemize}
+    \item Antonio Sánchez Doña
+    \item Aissa Omar El Hammouti Chachoui
+\end{itemize}
+
+\vspace{0.5cm}
+
+% 2. Título orientativo
+\section*{Título orientativo del trabajo}
+Sistemas RAG (Retrieval-Augmented Generation) en el análisis de historias clínicas electrónicas y literatura médica
+
+\vspace{0.5cm}
+
+% 3. Resumen breve
+\section*{Resumen breve}
+Nuestra propuesta se centra en estudiar los sistemas RAG (Retrieval-Augmented Generation) como solución a las limitaciones de los grandes modelos de lenguaje (LLMs) en el ámbito médico. Aunque la IA generativa es muy potente en el procesamiento del lenguaje natural, su tendencia a generar alucinaciones es un riesgo inaceptable en la toma de decisiones clínicas. RAG mitiga este problema conectando el modelo con repositorios de documentos externos y verificables, de manera que se obliga a la IA a basar sus respuestas en evidencia. Nuestro trabajo analizará la arquitectura estándar de un pipeline RAG: fragmentación de texto (chunking), generación de embeddings, bases de datos vectoriales y recuperación semántica. Como propuesta de aplicación, intentaremos desarrollar un prototipo básico mediante un Notebook en Python (usando librerías actuales) que consulte una guía clínica en PDF. Ilustraremos con un diagrama de arquitectura la diferencia de precisión frente a un modelo sin RAG. Finalmente, como análisis crítico abordaremos dos retos fundamentales para la Ingeniería de la Salud: uno, la privacidad de los datos en los prompts; y dos, la fiabilidad de las fuentes.
+
+\end{document}
