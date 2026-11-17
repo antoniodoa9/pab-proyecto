@@ -18,6 +18,9 @@ La técnica RAG reduce este problema: antes de que el modelo responda, se buscan
 
 ## Cómo funciona el prototipo
 
+![Arquitectura RAG: fase de indexación y fase de inferencia](presentacion/img/arquitectura_rag.jpg)
+
+
 ```
 PDF de la guía  ->  limpieza del texto  ->  fragmentos de 800 caracteres (solape de 100)
                 ->  embeddings multilingües  ->  índice en ChromaDB
